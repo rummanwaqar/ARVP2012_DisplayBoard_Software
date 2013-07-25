@@ -1,11 +1,12 @@
 # Library path
-LIBROOT=../../STM32VL-Discovery_Package
+LIBROOT=../../ARM/STM32VL-Discovery_Package
 
 # Source Files
-SRCS = main.c
+SRCS = main.c shiftReg.c delay.c lcd.c spi.c
 
 # Library code
-SRCS += stm32f10x_rcc.c stm32f10x_gpio.c
+SRCS += stm32f10x_rcc.c stm32f10x_gpio.c stm32f10x_tim.c stm32f10x_spi.c
+SRCS += stm32f10x_exti.c misc.c
 
 # Project Name
 PROJ_NAME=$(notdir $(CURDIR))
